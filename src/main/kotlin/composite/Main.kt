@@ -10,7 +10,6 @@ import kotlin.ConcurrentModificationException
 fun main() {
     val operation = "(${readLine()})"
 
-
     val stack = Stack<String>()
 
     var cop = findCleanOps(operation)
@@ -42,10 +41,7 @@ fun main() {
         exp = CompositeOperand(exp, current[i+1].first, current[i].second!!)
     }
 
-
     println(exp)
-
-
 }
 
 fun findCleanOps(operation: String?): String? =
